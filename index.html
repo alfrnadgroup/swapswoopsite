@@ -3,48 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SwapSwoop - Quantum Coin</title>
+  <title>SwapSwoop - Quantum Coin App</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Optional custom styles for logo size */
-    .logo {
-      width: 120px;
-      height: 120px;
-    }
-    .hero-logo {
-      width: 160px;
-      height: 160px;
-      margin: 0 auto 20px;
-    }
-  </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
 
 <!-- Header -->
-<header class="bg-white shadow-md p-4 md:p-6">
-  <div class="container mx-auto flex flex-wrap items-center justify-between">
-    <img src="logo.png" alt="SwapSwoop Logo" class="logo"/>
-    <div class="mx-auto text-center">
-      <h1 class="text-xl md:text-2xl font-bold text-indigo-600" data-en="SwapSwoop" data-ar="سواب-سويب">SwapSwoop</h1>
-      <p class="text-sm text-gray-500" data-en="Next-Gen Quantum Coin App" data-ar="تطبيق الكوين الكمومي الجيل القادم">Next-Gen Quantum Coin App</p>
-    </div>
-    <div class="flex items-center space-x-4">
-      <button id="langToggle" class="px-4 py-2 border border-indigo-600 text-indigo-600 rounded hover:bg-indigo-100">العربية</button>
-    </div>
+<header class="bg-white shadow-md p-4 md:p-6 flex flex-wrap items-center justify-between">
+  <img src="logo.png" alt="SwapSwoop Logo" class="h-20 w-20 md:h-28 md:w-28" />
+  <div class="mx-auto text-center">
+    <h1 class="text-xl md:text-2xl font-bold text-indigo-600" data-en="SwapSwoop" data-ar="SwapSwoop">SwapSwoop</h1>
+    <p class="text-sm text-gray-500" data-en="Quantum Coin Platform" data-ar="منصة العملة الكمومية">Quantum Coin Platform</p>
   </div>
-  <nav class="flex flex-wrap justify-center space-x-4 mt-4 rtl:space-x-reverse">
-    <a href="#features" class="hover:text-indigo-500 block py-2" data-en="Features" data-ar="الميزات">Features</a>
-    <a href="#blockchain" class="hover:text-indigo-500 block py-2" data-en="Quantum Blockchain" data-ar="البلوكشين الكمومي">Quantum Blockchain</a>
-    <a href="#pools" class="hover:text-indigo-500 block py-2" data-en="Pools" data-ar="البولز">Pools</a>
-    <a href="#contact" class="hover:text-indigo-500 block py-2" data-en="Contact" data-ar="اتصل بنا">Contact</a>
-  </nav>
+  <div class="flex items-center space-x-4">
+    <button id="langToggle" class="px-4 py-2 border border-indigo-600 text-indigo-600 rounded hover:bg-indigo-100">العربية</button>
+  </div>
 </header>
 
 <!-- Hero Section -->
 <section class="text-center py-16 bg-gradient-to-br from-indigo-100 to-white px-4">
-  <img src="logo.png" alt="SwapSwoop Logo" class="hero-logo"/>
-  <h2 class="text-3xl font-bold mb-4" data-en="Your Quantum Coin Wallet & Swap Platform" data-ar="محفظة وسواب عملة كمومية خاصة بك">Your Quantum Coin Wallet & Swap Platform</h2>
-  <p class="text-lg mb-6 text-gray-700 max-w-xl mx-auto" data-en="Manage your QTC, make secure swaps, track pools, and enjoy our own quantum-secured blockchain algorithm." data-ar="إدارة عملتك الكمومية QTC، إجراء عمليات السواب الآمنة، متابعة البولز، والاستفادة من خوارزمية البلوكشين الكمومية الخاصة بنا.">Manage your QTC, make secure swaps, track pools, and enjoy our own quantum-secured blockchain algorithm.</p>
+  <h2 class="text-3xl font-bold mb-4" data-en="Quantum Coin for secured fiat swaps and shared fiat expenses pools (ex: travel pool)" data-ar="عملة كمومية لتبادلات العملات الآمنة ومحافظ المصاريف المشتركة (مثل: محفظة السفر)">Quantum Coin for secured fiat swaps and shared fiat expenses pools (ex: travel pool)</h2>
+  <p class="text-lg mb-6 text-gray-700 max-w-xl mx-auto" data-en="Secure, fast, and transparent swaps of fiat with our own blockchain algorithm. Manage shared expenses seamlessly in pools." data-ar="تبادلات آمنة وسريعة وشفافة للعملات مع خوارزمية البلوكتشين الخاصة بنا. إدارة المصاريف المشتركة بسلاسة داخل المحافظ.">Secure, fast, and transparent swaps of fiat with our own blockchain algorithm. Manage shared expenses seamlessly in pools.</p>
   <div class="flex justify-center mt-10">
     <a href="https://swapswoop.onrender.com" target="_blank" rel="noopener noreferrer">
       <button class="bg-yellow-500 text-white font-bold py-2 px-6 rounded shadow hover:bg-yellow-600" data-en="Get Started" data-ar="ابدأ الآن">Get Started</button>
@@ -57,31 +36,23 @@
   <div class="max-w-4xl mx-auto">
     <h3 class="text-2xl font-bold mb-6 text-center text-indigo-700" data-en="Core Features" data-ar="الميزات الأساسية">Core Features</h3>
     <ul class="list-disc list-inside text-gray-700 space-y-2">
-      <li data-en="Create & Track Transactions" data-ar="إنشاء ومتابعة المعاملات">Create & Track Transactions</li>
-      <li data-en="Secure Quantum Swaps" data-ar="سواب آمن بالكمومية">Secure Quantum Swaps</li>
-      <li data-en="Personal Wallet Management" data-ar="إدارة المحفظة الشخصية">Personal Wallet Management</li>
-      <li data-en="Shared Pools with Expense Logging" data-ar="بولز مشتركة مع تسجيل المصاريف">Shared Pools with Expense Logging</li>
-      <li data-en="Own Quantum-Secured Blockchain" data-ar="خوارزمية بلوكشين كمومية خاصة بنا">Own Quantum-Secured Blockchain</li>
+      <li data-en="Secure fiat swaps using Quantum Coin" data-ar="تبادلات آمنة للعملات باستخدام العملة الكمومية">Secure fiat swaps using Quantum Coin</li>
+      <li data-en="Create shared expense pools" data-ar="إنشاء محافظ مصاريف مشتركة">Create shared expense pools</li>
+      <li data-en="Track contributions and approvals" data-ar="تتبع المساهمات والموافقات">Track contributions and approvals</li>
+      <li data-en="View wallet balances & transaction history" data-ar="عرض أرصدة المحفظة وتاريخ المعاملات">View wallet balances & transaction history</li>
+      <li data-en="Fast, transparent, and secure blockchain transactions" data-ar="معاملات بلوكتشين سريعة وشفافة وآمنة">Fast, transparent, and secure blockchain transactions</li>
     </ul>
   </div>
 </section>
 
-<!-- Blockchain Strength Section -->
-<section id="blockchain" class="py-16 bg-indigo-50 px-4">
-  <div class="max-w-4xl mx-auto text-center">
-    <h3 class="text-2xl font-bold mb-6 text-indigo-700" data-en="Quantum Coin Blockchain" data-ar="بلوكتشين عملة كمومية">Quantum Coin Blockchain</h3>
-    <p class="text-gray-700 text-base max-w-3xl mx-auto" data-en="Our blockchain algorithm provides a quantum-secure foundation for the QTC currency, ensuring unmatched transaction integrity, speed, and security." data-ar="توفر خوارزمية البلوكشين الخاصة بنا أساسًا آمنًا كموميًا لعملة QTC، مما يضمن سلامة المعاملات وسرعتها وأمانها بلا مثيل.">Our blockchain algorithm provides a quantum-secure foundation for the QTC currency, ensuring unmatched transaction integrity, speed, and security.</p>
-  </div>
-</section>
-
 <!-- Pools Section -->
-<section id="pools" class="py-16 bg-white px-4">
+<section id="pools" class="py-16 bg-gray-50 px-4">
   <div class="max-w-4xl mx-auto text-center">
-    <h3 class="text-2xl font-bold mb-6 text-indigo-700" data-en="Pools" data-ar="البولز">Pools</h3>
-    <p class="text-gray-700 mb-6" data-en="Create shared pools, join with friends, contribute QTC, and log expenses securely." data-ar="إنشاء بولز مشتركة، الانضمام مع الأصدقاء، المساهمة بعملة QTC، وتسجيل المصاريف بأمان.">Create shared pools, join with friends, contribute QTC, and log expenses securely.</p>
-    <button id="viewPoolsBtn" class="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-500 transition" data-en="Check Pools" data-ar="عرض البولز">Check Pools</button>
+    <h3 class="text-2xl font-bold mb-6 text-indigo-700" data-en="Pools" data-ar="محفظة تشاركية">Pools</h3>
+    <p class="text-gray-700 mb-6" data-en="Create shared pools, join with friends, contribute QTC, and log expenses securely." data-ar="إنشاء محفظة تشاركية، الانضمام مع الأصدقاء، المساهمة بعملة QTC، وتسجيل المصاريف بأمان.">Create shared pools, join with friends, contribute QTC, and log expenses securely.</p>
+    <button id="viewPoolsBtn" class="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-500 transition" data-en="Check Pools" data-ar="عرض المحفظة التشاركية">Check Pools</button>
     <div id="poolDetails" class="mt-6 hidden text-left max-w-2xl mx-auto border border-gray-300 rounded p-4">
-      <p data-en="Pool Name: Travel Pool" data-ar="اسم البول: بول السفر">Pool Name: Travel Pool</p>
+      <p data-en="Pool Name: Travel Pool" data-ar="اسم المحفظة: محفظة السفر">Pool Name: Travel Pool</p>
       <p data-en="Members: Alice, Bob, Charlie" data-ar="الأعضاء: أليس، بوب، تشارلي">Members: Alice, Bob, Charlie</p>
       <p data-en="Threshold: 2 approvals needed" data-ar="الحد الأدنى: موافقة شخصين">Threshold: 2 approvals needed</p>
       <p data-en="Balance: 500 QTC" data-ar="الرصيد: 500 QTC">Balance: 500 QTC</p>
@@ -90,16 +61,24 @@
   </div>
 </section>
 
+<!-- Security Section -->
+<section id="security" class="py-16 bg-white px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h3 class="text-2xl font-bold mb-6 text-indigo-700" data-en="Strength of Our Blockchain Algorithm" data-ar="قوة خوارزمية البلوكتشين الخاصة بنا">Strength of Our Blockchain Algorithm</h3>
+    <p class="text-gray-700 mb-6" data-en="SwapSwoop’s own blockchain algorithm ensures secure, fast, and transparent transactions with Quantum Coin. Each transaction is verified, tamper-proof, and reliable for both personal swaps and shared pools." data-ar="خوارزمية البلوكتشين الخاصة بـ SwapSwoop تضمن معاملات آمنة وسريعة وشفافة باستخدام العملة الكمومية. كل معاملة يتم التحقق منها، ومقاومة للتلاعب، وموثوقة لكل من التبادلات الشخصية والمحافظ المشتركة.">SwapSwoop’s own blockchain algorithm ensures secure, fast, and transparent transactions with Quantum Coin. Each transaction is verified, tamper-proof, and reliable for both personal swaps and shared pools.</p>
+  </div>
+</section>
+
 <!-- Contact Section -->
 <section id="contact" class="bg-indigo-600 text-white py-16 px-4">
   <div class="max-w-3xl mx-auto text-center">
     <h3 class="text-3xl font-bold mb-6" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</h3>
-    <p class="mb-8" data-en="Have questions or want a demo? Reach out to us!" data-ar="هل لديك أسئلة أو تريد تجربة؟ تواصل معنا!">Have questions or want a demo? Reach out to us!</p>
+    <p class="mb-8" data-en="Ready to get started? Reach out for a demo or questions." data-ar="هل أنت مستعد للبدء؟ تواصل معنا لعرض تجريبي أو أي استفسارات.">Ready to get started? Reach out for a demo or questions.</p>
     <form class="max-w-xl mx-auto space-y-6" action="#" method="POST">
       <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 rounded text-gray-800" />
       <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-3 rounded text-gray-800" />
       <textarea name="message" rows="5" placeholder="Your Message" required class="w-full px-4 py-3 rounded text-gray-800"></textarea>
-      <button type="submit" class="bg-white text-indigo-600 px-8 py-3 rounded font-semibold hover:bg-indigo-100 transition" data-en="Send Message" data-ar="إرسال الرسالة">Send Message</button>
+      <button type="submit" class="bg-white text-indigo-600 px-8 py-3 rounded font-semibold hover:bg-indigo-100 transition">Send Message</button>
     </form>
   </div>
 </section>
@@ -107,18 +86,23 @@
 <script>
   // Language toggle
   const langToggle = document.getElementById('langToggle');
-  let isArabic = false;
+  let currentLang = 'en';
   langToggle.addEventListener('click', () => {
-    isArabic = !isArabic;
-    document.documentElement.dir = isArabic ? 'rtl' : 'ltr';
-    document.documentElement.lang = isArabic ? 'ar' : 'en';
-    langToggle.textContent = isArabic ? 'English' : 'العربية';
-    document.querySelectorAll('[data-en]').forEach(el => {
-      el.textContent = isArabic ? el.getAttribute('data-ar') : el.getAttribute('data-en');
-    });
+    const allElements = document.querySelectorAll('[data-en]');
+    if(currentLang === 'en') {
+      allElements.forEach(el => el.textContent = el.getAttribute('data-ar'));
+      langToggle.textContent = 'English';
+      document.documentElement.dir = 'rtl';
+      currentLang = 'ar';
+    } else {
+      allElements.forEach(el => el.textContent = el.getAttribute('data-en'));
+      langToggle.textContent = 'العربية';
+      document.documentElement.dir = 'ltr';
+      currentLang = 'en';
+    }
   });
 
-  // Pools toggle
+  // Show/hide pool details
   const viewPoolsBtn = document.getElementById('viewPoolsBtn');
   const poolDetails = document.getElementById('poolDetails');
   viewPoolsBtn.addEventListener('click', () => {
